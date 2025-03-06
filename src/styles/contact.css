@@ -1,0 +1,80 @@
+/* ContactForm.css */
+
+.body {
+  background: linear-gradient(to bottom, #223C6D, #a1c4fd); /* Gradiente de azul a celeste */
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Bright', Arial, monospace; /* Tipografía consistente con otros componentes */
+  padding: 2.5%;
+}
+
+.contact-form-container {
+  width: 800px;
+  margin: 50px auto; /* Centra el contenedor horizontalmente */
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.763); /* Fondo blanco casi transparente */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: 'Lucida Bright', Arial, monospace; /* Tipografía consistente con otros componentes */
+  color: #223C6D; /* Color principal del tema */
+}
+
+.contact-form-input,
+.contact-form-textarea {
+  width: calc(100% - 24px); 
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Lucida Bright', Arial, monospace; /* Tipografía consistente con otros componentes */
+  transition: border-color 0.3s ease;
+}
+
+.contact-form-input:focus,
+.contact-form-textarea:focus {
+  border-color: #223C6D; /* Color principal del tema */
+  outline: none;
+}
+
+.contact-form-textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.contact-form-button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: #223C6D; /* Color principal del tema */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Lucida Bright', Arial, monospace; /* Tipografía consistente con otros componentes */
+  transition: background-color 0.3s ease;
+}
+
+.contact-form-button:hover {
+  background-color: #657598; /* Color más oscuro para el estado hover */
+}
+
+.contact-form-status {
+  margin-top: 20px;
+  text-align: center;
+  font-family: 'Lucida Bright', Arial, monospace; /* Tipografía consistente con otros componentes */
+  color: #333;
+}
+
+.errors {
+  color: #f44336; 
+  font-size: 0.85rem; 
+  display: inline; 
+}

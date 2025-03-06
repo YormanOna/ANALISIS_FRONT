@@ -1,0 +1,392 @@
+/* Refined styles.css */
+.bodyC {
+    font-family: 'Lucida Bright', Arial, monospace;
+    background-image: url('../images/fondo4.jpg'); 
+    color: #2c3e50;
+    margin-top: -10px;
+    }
+  
+.containerC {
+    max-width: 50rem;
+    margin: 2.5rem auto;
+    padding: 2.5rem;
+    background-color: #ffffff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    border-top: 6px solid #3498db;
+    transition: all 0.3s ease;
+}
+
+.containerC:hover {
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 1.5);
+}
+
+.sectionC {
+    margin-bottom: 2.5rem;
+
+}
+.titleC{
+  font-size: 2rem;
+  font-family: 'Georgia', Arial, monospace;
+  text-transform:capitalize;
+
+
+}
+.section-titleC {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #2ecc71;
+    padding-bottom: 0.7rem;
+    letter-spacing: 1.2px;
+}
+
+.buttonC {
+    width: 100%;
+    padding: 0.9rem 1.4rem;
+    border: none;
+    background-color: #e74c3c;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+.buttonC:hover {
+    background-color: #c0392b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+.button-outlineC {
+    background-color: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    font-weight: 600;
+}
+
+.button-outlineC:hover {
+    background-color: #3498db;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.input {
+    width: 100%;
+    padding: 0.85rem;
+    border: 1px solid #bdc3c7;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f4f7f9;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #8e44ad;
+    box-shadow: 0 0 0 3px rgba(142, 68, 173, 0.3);
+}
+
+.border-boxC {
+    border: 2px solid #e0e0e0;
+    padding: 1.8rem;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.border-boxC:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.gridC {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.grid-2-colsC {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-colsC {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex-centerC {
+    display: flex;
+    align-items: center;
+}
+
+.noteC {
+    font-size: 1rem;
+    color: #7f8c8d;
+    font-style: italic;
+    margin-top: 1rem;
+    padding: 0.7rem;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+    border-left: 4px solid #3498db;
+}
+
+.flex-space-betweenC {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.checkbox-labelC {
+    margin-left: 0.8rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+/* Custom checkbox styling */
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #2ecc71;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #2ecc71;
+    position: relative;
+}
+
+input[type="checkbox"]:checked::before {
+    content: '\2714';
+    font-size: 1.1rem;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Additional improvements */
+.sectionC h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 1rem;
+}
+
+.flex-space-betweenC .buttonC {
+    width: 48%;
+}
+
+@media (max-width: 768px) {
+    .containerC {
+      padding: 2rem;
+    }
+    
+    .grid-2-colsC,
+    .grid-3-colsC {
+      grid-template-columns: 1fr;
+    }
+    
+    .flex-space-betweenC {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .flex-space-betweenC .buttonC {
+      width: 100%;
+    }
+}
+
+/* Cocktail card styles */
+.grid-3-colsC {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.coctel-cardC {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coctel-cardC:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.coctel-imgC {
+    width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.coctel-infoC {
+    margin-top: 15px;
+}
+
+.coctel-descripcionC {
+    font-size: 1rem;
+    color: #7f8c8d;
+    margin-bottom: 0.5rem;
+}
+
+.coctel-precioC {
+    font-size: 1.2rem;
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.coctel-quantityC {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cantidad-labelC {
+    margin-right: 10px;
+    font-weight: 500;
+}
+
+.input-cantidadC {
+    width: 60px;
+    text-align: center;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 5px;
+    transition: all 0.3s ease;
+}
+
+.input-cantidadC:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 2px rgba(231, 76, 60, 0.2);
+}
+
+/* Select and option styles */
+.inputC {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f7f9fb;
+    transition: all 0.3s ease;
+}
+
+.inputC:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.optionC {
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+}/* Modal for quotes */
+.cotizacion-emergenteC {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  text-align: center;
+  max-width: 90%;
+  width: 550px;
+  animation: fadeIn 0.5s ease-out;
+  background-image: linear-gradient(to right, #e0f7fa, #b2ebf2);
+}
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translate(-50%, -40%);
+  }
+  to {
+      opacity: 1;
+      transform: translate(-50%, -50%);
+  }
+}
+
+.cotizacion-emergente-contentC {
+  font-family: 'Lucida Bright', Arial, monospace;
+}
+
+.cotizacion-emergenteC h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #256870; 
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+
+.cotizacion-emergenteC p {
+  margin: 15px 0;
+  color: #2c3e50;
+  font-size: 1.1rem;
+  line-height: 1.6; 
+}
+
+.cotizacion-emergenteC ul {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+.cotizacion-emergenteC li {
+  margin-bottom: 10px;
+  color: #05453e; 
+  font-size: 1.1rem;
+}
+
+.cotizacion-emergenteC button {
+  margin: 10px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for interactions */
+}
+
+.cotizacion-emergenteC .buttonC {
+  background-color: #00acc1; /* Bright cyan for a vibrant look */
+  color: #fff;
+}
+
+.cotizacion-emergenteC .buttonC:hover {
+  background-color: #00838f; 
+  transform: translateY(-2px); 
+}
+
+.cotizacion-emergenteC .buttonC.button-outlineC {
+  background-color: transparent;
+  border: 2px solid #00acc1; 
+  color: #00acc1;
+}
+
+.cotizacion-emergenteC .buttonC.button-outlineC:hover {
+  background-color: #00acc1;
+  color: #fff;
+  transform: translateY(-2px); 
+}
+
+/* Additional styles for a cheerful and engaging look */
+.cotizacion-emergenteC h2, .cotizacion-emergenteC p, .cotizacion-emergenteC li {
+  border-bottom: 2px solid #00acc1; 
+}

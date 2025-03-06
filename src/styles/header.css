@@ -1,0 +1,32 @@
+
+.header {
+    width: 97%;
+    background-color: #223C6D; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 10px;
+  }
+  
+  .header h1 {
+    color: white;
+    font-family: 'Lucida Bright', Arial, monospace;
+    font-size: 220%;
+    margin: auto;
+  }
+  
+  .header p {
+    font-size: 17px; 
+    color: #d1d1d1fa; 
+    margin: 0; 
+    font-family: 'Lucida Bright', Arial, monospace;
+    margin: 0;
+  }
+  
+  .header-img2 {
+    width: 100%;
+    margin-right: -60%;
+  }
+  

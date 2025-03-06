@@ -1,0 +1,79 @@
+/* Admin Panel Container */
+.bodyA {
+  font-family: 'Lucida Bright', Arial, monospace;
+  background-image: url('../images/fondo4.jpg'); 
+  color: #2c3e50;
+  margin-top: -10px;
+  }
+
+.admin-container {
+  width: 60%; /* Ajustar el ancho para adaptarse mejor a diferentes tamaños de pantalla */
+  max-width: 1000px; /* Ancho máximo para evitar que se extienda demasiado */
+  margin: 40px auto; /* Centrar el contenedor horizontalmente y reducir el margen */
+  padding: 40px; /* Espaciado interno más amplio */
+  border: 2px solid #1ebcff9b; /* Borde azul vibrante */
+  border-radius: 15px; /* Bordes más redondeados */
+  background: rgba(255, 255, 255, 0.937); /* Fondo blanco con ligera transparencia */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Sombra más suave y difusa */
+  font-family: 'Poppins', sans-serif; /* Tipografía moderna y legible */
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 40px; /* Mayor espacio inferior para separación */
+  color: #055975; /* Azul cielo brillante */
+  font-size: 2.4rem; /* Tamaño de fuente grande para mayor impacto */
+  font-weight: 600; /* Peso de fuente para énfasis sin ser demasiado negrita */
+  letter-spacing: 1px; /* Espaciado de letras para un aspecto más aireado */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Paragraphs */
+p {
+  text-align: center;
+  color: #555555; /* Gris medio para un buen contraste sin ser demasiado oscuro */
+  line-height: 1.8; /* Mayor interlineado para mejorar la legibilidad */
+  margin-bottom: 25px; /* Espacio inferior adicional para separación */
+}
+
+/* Tab Buttons */
+.tab-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px; /* Espacio inferior adicional */
+}
+
+.tab-button {
+  padding: 14px 28px; /* Espaciado interno más amplio */
+  margin: 0 12px; /* Espaciado entre botones */
+  border: 2px solid #00BFFF; /* Borde azul brillante */
+  border-radius: 10px; /* Bordes redondeados para los botones */
+  background-color: #E0FFFF; /* Azul claro de fondo */
+  color: #1E90FF; /* Texto azul oscuro */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  font-weight: 500; /* Peso de fuente moderado para los botones */
+}
+
+.tab-button.active {
+  background-color: #1E90FF; /* Azul más intenso cuando está activo */
+  color: white; /* Texto blanco para el estado activo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ligera para el estado activo */
+}
+
+.tab-button:hover {
+  background-color: #87CEFA; /* Azul cielo claro en hover */
+  transform: translateY(-3px); /* Efecto de elevación en hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada en hover */
+  color:#333;
+}
+
+/* Tab Content */
+.tab-content {
+  margin-top: 30px; /* Espacio superior para separación */
+  padding: 25px; /* Espaciado interno adicional */
+  border: 1px solid #0c6e5e89; /* Borde azul brillante */
+  border-radius: 10px; /* Bordes redondeados */
+  background: #F0F8FF; /* Fondo blanco con un tono azul claro */
+}

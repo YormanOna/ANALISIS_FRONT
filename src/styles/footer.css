@@ -1,0 +1,17 @@
+footer{
+    background-color: #223C6D; 
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 120%;
+    width: 96%;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+    margin-top: 10px;
+  }
+  
+  footer p{
+    color: #fff;
+  }
+  
